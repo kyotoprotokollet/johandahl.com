@@ -22,35 +22,10 @@ query {
 </static-query>
 
 <style>
-body {
-	font-family: georgia, serif;
-	margin:0;
-	padding:0;
-	line-height: 1.6;
-	font-size: 18px;
-	color: #111;
-}
-
 .header {
 	padding-bottom: 1.5rem;
-	margin-bottom: 1.5rem;
-	border-bottom: 1px solid #ebebeb;
-}
-
-p,
-h1,h2,h3,h4,h5,h6 {
-	margin-bottom: .5em;
-}
-
-.wrapper {
-	max-width: 760px;
-	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.header {
 	margin: 3rem 0;
+	border-bottom: 1px solid #ebebeb;
 }
 
 .nav {

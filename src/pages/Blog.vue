@@ -20,23 +20,19 @@ export default {
 
 <page-query>
 query {
-  metaData {
-    siteName
-    siteDescription
-  }
-  allPost {
-    totalCount
-    edges {
-      node {
-        id
-        title
-        timeToRead
-        description
-        date (format: "D MMMM YYYY")
-        path
-      }
+    allPost {
+        totalCount
+        edges {
+            node {
+                id
+                title
+                timeToRead
+                description
+                date (format: "D MMMM YYYY")
+                path
+            }
+        }
     }
-
-  }
 }
+    
 </page-query>
