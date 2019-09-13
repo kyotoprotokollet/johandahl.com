@@ -1,18 +1,25 @@
 <template>
-  <Layout>
-    <g-link to="/blog" class="link">Go Back</g-link>
-    <div class="post-title">
-		<h1>{{$page.post.title}}</h1>
-    </div>
-    <div class="post-meta">
-		<p class="post-date">{{ $page.post.date}} | {{$page.post.timeToRead}} min read</p>
-		<p class="post-tags">{{ $page.post.tags}}</p>
-    </div>
-    <div class="post-content">
-		<p v-html="$page.post.content" />
-    </div>
-  </Layout>
+	<Layout>
+		<g-link to="/blog" class="link">Go Back</g-link>
+        <PostMeta :date="$page.post.date" :timeToRead="$page.post.timeToRead"/>
+		<div class="post-title">
+			<h1>{{$page.post.title}}</h1>
+		</div>
+		<div class="post-content">
+			<p v-html="$page.post.content" />
+		</div>
+	</Layout>
 </template>
+
+<script>
+import PostMeta from '@/components/PostMeta'
+
+export default {
+    components: {
+        PostMeta
+	},
+};
+</script>
 
 <page-query>
 	query Post ($path: String!) {
@@ -28,7 +35,6 @@
 </page-query>
 
 <style lang="scss">
-
 .post-content {
 	h1,
 	h2,
@@ -39,5 +45,4 @@
 		margin-top: 4rem;
 	}
 }
-
 </style>

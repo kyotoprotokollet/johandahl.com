@@ -1,9 +1,6 @@
 <template>
     <div class="post-preview">
-        <div class="post-preview__meta">
-            <p class="post-preview__date"><span class="post-preview__icon">📅</span>{{post.date}}</p>
-            <p class="post-preview__readtime"><span class="post-preview__icon">⏳</span>{{post.timeToRead}} min read</p>
-        </div>
+        <PostMeta :date="post.date" :timeToRead="post.timeToRead"/>
         <g-link :to="post.path"><h1 class="post-preview__title">{{post.title}}</h1></g-link>
         <p class="post-preview__description">{{post.description}}</p>
         <g-link :to="post.path" class="post-preview__readmore">Read More...</g-link>
@@ -11,7 +8,12 @@
 </template>
 
 <script>
+import PostMeta from '@/components/PostMeta'
+
 export default {
+    components: {
+        PostMeta
+    },
     props: ["post"]
 };
 </script>
