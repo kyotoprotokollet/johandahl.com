@@ -1,0 +1,17 @@
+:root {
+    // Typography
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Lato', sans-serif;
+    --font-code: 'Inconsolata', monospace;
+
+    // Colors
+    --color-border: #ebebeb;
+
+    --color-link: rrgb(106, 98, 113);
+    --color-link-background: rgb(125, 48, 197);
+    --color-link-background--hover: rgba(125, 48, 197,.1);
+
+    --color-font:  #373737;
+    --color-font--light: #9c9c9c;
+
+}

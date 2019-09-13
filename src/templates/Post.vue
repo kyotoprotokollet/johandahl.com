@@ -1,4 +1,3 @@
-// Template for blog posts.
 <template>
   <Layout>
     <g-link to="/blog" class="link">Go Back</g-link>
@@ -28,5 +27,17 @@
 	}
 </page-query>
 
-<style>
+<style lang="scss">
+
+.post-content {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 4rem;
+	}
+}
+
 </style>

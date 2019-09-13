@@ -1,13 +1,12 @@
 <template>
 	<div>
 		<header class="header">
-			<nav class="nav wrapper">
-				<g-link class="nav__link" to="/">Johan Dahl</g-link>
-				<g-link class="nav__link" to="/contact">Contact</g-link>
+			<nav class="nav container content-padding">
+				<g-link class="nav__link" to="/">About</g-link>
 				<g-link class="nav__link" to="/blog">Blog</g-link>
 			</nav>
 		</header>
-		<div class="wrapper">
+		<div class="container content-padding">
 			<slot/>
 		</div>
 	</div>
@@ -21,17 +20,21 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="scss">
 .header {
-	padding-bottom: 1.5rem;
-	margin: 3rem 0;
-	border-bottom: 1px solid #ebebeb;
+	padding: 1.5rem;
+	margin-bottom: 3rem;
+	box-shadow: 1px 2px 18px rgba(0,0,0,.1)
 }
 
 .nav {
 	display: flex;
-	justify-content: center;
-	font-size: 1.5rem;
+	justify-content: flex-end;
+	font-size: 1rem;
+
+	a {
+		padding: 5px 15px;
+	}
 }
 
 .nav__link + .nav__link {
