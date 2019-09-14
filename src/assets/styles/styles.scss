@@ -1,71 +1,7 @@
-@import 'modern-normalize';
-@import 'basic-reset';
-@import 'variables';
-@import 'settings';
+@import '01-settings/settings';
+@import '02-tools/tools';
+@import '03-generic/generic';
+@import '04-elements/elements';
+@import '05-objects/objects';
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather:300,400,700|Inconsolata&display=swap');
 
-html {
-    font-size: 80%;
-    
-    @include breakpoint(small) {
-        font-size: 90%;
-    }
-
-    @include breakpoint(medium) {
-        font-size: 100%;
-    }
-}
-
-body {
-    background-color: white;
-    font-family: var(--font-sans);
-	margin:0;
-	padding:0;
-	line-height: 1.65;
-    color: var(--color-font);
-    font-size: 1.25rem;
-}
-
-code,
-pre {
-    font-family: var(--font-code);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-bottom: .5em;
-    font-family: var(--font-serif);
-    font-weight: 600;
-}
-
-p {
-    margin-bottom: 1.5em;
-}
-
-a {
-    color: var(--color-link);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid var(--color-link-background);
-    transition: all .25s ease-out;
-
-    &:hover {
-        background-color: var(--color-link-background--hover);
-    }
-}
-
-.container {
-	max-width: 760px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content-padding {
-    padding-left: 20px;
-	padding-right: 20px;
-}

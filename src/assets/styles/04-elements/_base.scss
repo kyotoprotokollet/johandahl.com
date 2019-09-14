@@ -1,0 +1,42 @@
+html {
+    font-size: 80%;
+    
+    @include breakpoint(small) {
+        font-size: 90%;
+    }
+
+    @include breakpoint(medium) {
+        font-size: 100%;
+    }
+}
+
+body {
+    background-color: white;
+    font-family: var(--font-sans);
+	margin:0;
+	padding:0;
+	line-height: 1.65;
+    color: var(--color-font);
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--color-link);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-link-background);
+    transition: all .25s ease-out;
+
+    &:hover {
+        background-color: var(--color-link-background--hover);
+    }
+}
+
+code,
+pre {
+    font-family: var(--font-code);
+}
+
+blockquote {
+
+}

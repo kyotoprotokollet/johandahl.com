@@ -1,6 +1,6 @@
 <template>
 	<Layout>
-		<g-link to="/blog" class="link">Go Back</g-link>
+		<g-link to="/blog" class="go-back">Go Back</g-link>
         <PostMeta :date="$page.post.date" :timeToRead="$page.post.timeToRead"/>
 		<div class="post-title">
 			<h1>{{$page.post.title}}</h1>
@@ -44,5 +44,9 @@ export default {
 	h6 {
 		margin-top: 4rem;
 	}
+}
+
+.go-back {
+	font-size: .9rem;
 }
 </style>

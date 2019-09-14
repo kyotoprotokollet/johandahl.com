@@ -16,7 +16,9 @@ export default {
 .post-meta {
     display: flex;
     position: relative;
-    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid #f1f1f1;
     font-family: var(--font-code);
     font-size: 1rem;
     color: var(--color-font--light);
