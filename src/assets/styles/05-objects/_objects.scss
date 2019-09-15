@@ -4,6 +4,22 @@
     margin-right: auto;
 }
 
+.container-grid {
+    display: grid;
+    grid-template-columns: [content] 1fr; 
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(medium) {
+        grid-template-columns: [left-sidebar] 50px [content] 1fr [right-sidebar] 50px;  
+    }
+
+    @include breakpoint(large) {
+        grid-template-columns: [left-sidebar] 100px [content] 1fr [right-sidebar] 100px;  
+    }
+}
+
 .content-padding {
     padding-left: 5vw;
     padding-right: 5vw;

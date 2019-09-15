@@ -1,15 +1,10 @@
 <template>
-	<div>
-		<header class="header">
-			<nav class="nav container content-padding">
-				<g-link class="nav__link" to="/">About</g-link>
-				<g-link class="nav__link" to="/blog">Blog</g-link>
-			</nav>
-		</header>
-		<div class="container content-padding">
-			<slot/>
-		</div>
-	</div>
+	<header class="header">
+		<nav class="nav container content-padding">
+			<g-link class="nav__link" to="/">About</g-link>
+			<g-link class="nav__link" to="/blog">Blog</g-link>
+		</nav>
+	</header>
 </template>
 
 <static-query>

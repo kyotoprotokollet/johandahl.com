@@ -16,6 +16,13 @@ module.exports = {
         path: "blog/*.md",
         route: '/blog/:slug'
       }
+    },
+  ],
+  transformers: {
+    remark: {
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
     }
-  ]
+  }
 }

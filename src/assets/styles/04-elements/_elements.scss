@@ -1,30 +1,3 @@
 @import 'base';
 @import 'typography';
 @import 'list';
-
-html {
-    font-size: 80%;
-    
-    @include breakpoint(small) {
-        font-size: 90%;
-    }
-
-    @include breakpoint(medium) {
-        font-size: 100%;
-    }
-}
-
-body {
-    background-color: white;
-    font-family: var(--font-sans);
-	margin:0;
-	padding:0;
-	line-height: 1.65;
-    color: var(--color-font);
-    font-size: 1.25rem;
-}
-
-code,
-pre {
-    font-family: var(--font-code);
-}

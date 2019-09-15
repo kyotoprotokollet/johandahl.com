@@ -1,16 +1,25 @@
 <template>
-  <Layout>
-    <section class="posts">
-      <PostList v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
-    </section>
-  </Layout>
+    <div>
+        <Header></Header>
+        <GridDefault>
+            <div class="post-previews">
+                <PostPreview v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
+            </div>        
+        </GridDefault>
+    </div>
 </template>
 
+<style lang="scss">
+.post-previews {
+    grid-area: content;
+}
+</style>
+
 <script>
-import PostList from "@/components/PostList";
+import PostPreview from "@/components/PostPreview";
 export default {
   components: {
-    PostList
+    PostPreview
   },
   metaInfo: {
     title: "Blog"
@@ -25,6 +34,7 @@ query {
         edges {
             node {
                 id
+                author
                 title
                 timeToRead
                 description
@@ -34,5 +44,4 @@ query {
         }
     }
 }
-    
 </page-query>

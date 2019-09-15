@@ -1,14 +1,15 @@
 <template>
     <div class="post-meta">
-        <p class="post-meta__date"><span class="post-meta__icon">📅</span>{{date}}</p>
-        <p class="post-meta__readtime"><span class="post-meta__icon">⏳</span>{{timeToRead}} min read</p>
+        <p v-if="date" class="post-meta__date"><span class="post-meta__icon">📅</span>{{date}}</p>
+        <p v-if="timeToRead" class="post-meta__readtime"><span class="post-meta__icon">⏳</span>{{timeToRead}} min read</p>
+        <p v-if="author" class="post-meta__readtime">By {{author}}</p>
     </div>
 </template>
 
 <script>
 export default {
     name: 'PostMeta',
-    props: ["date", "timeToRead"]
+    props: ["date", "timeToRead", "author"]
 }
 </script>
 
@@ -16,13 +17,12 @@ export default {
 .post-meta {
     display: flex;
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
     border-bottom: 5px solid #f1f1f1;
     font-family: var(--font-code);
     font-size: 1rem;
     color: var(--color-font--light);
-
+    margin-bottom: 2rem;
+    
     * + * {
         margin-left: 1rem;
 

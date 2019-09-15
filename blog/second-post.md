@@ -1,4 +1,5 @@
 ---
+author: "Johan Dahl"
 title: "Unit tests in Vue.js components"
 description: "In Build Your First Vue.js Component we made a star rating component. We’ve covered many fundamental concepts to help you create more complex Vue.js components. Yet, there’s one crucial point you need to build bulletproof components you can use in production: unit testing."
 slug: "up-town-girl"
@@ -8,6 +9,18 @@ date: 2019-08-18
 ## Unit Test Your First Vue.js Component
 
 In Build Your First Vue.js Component we made a star rating component. We’ve covered many fundamental concepts to help you create more complex Vue.js components. Yet, there’s one crucial point you need to build bulletproof components you can use in production: unit testing.
+
+```php
+$korv = (int) 3;
+new Korv() {
+    this.korv = 3;
+}
+```
+
+```console
+foo@bar:~$ whoami
+foo
+```
 
 ### Why unit test a component?
 Unit tests are a crucial part of continuous integration. They make your code a lot more reliable by focusing on small, isolated entities and making sure they always behave as expected. You can confidently iterate on your project without fear of breaking things.

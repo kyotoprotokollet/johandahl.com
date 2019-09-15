@@ -1,4 +1,5 @@
 ---
+author: "Johan Dahl"
 title: "Getting Started with Nuxt.js"
 description: "Nuxt.js is a universal framework created for the sole purpose of building world-class Vue.js applications that can scale. What makes Nuxt special, how do you install it, and how can you use it in your next project?"
 slug: "getting-started"
