@@ -1,6 +1,6 @@
 html {
     font-size: 80%;
-    
+
     @include breakpoint(small) {
         font-size: 90%;
     }
@@ -18,6 +18,13 @@ body {
 	line-height: 1.65;
     color: var(--color-font);
     font-size: 1.15rem;
+    min-height: 100vh;
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -37,6 +44,8 @@ pre {
     font-family: var(--font-code);
 }
 
-blockquote {
-
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
