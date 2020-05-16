@@ -1,17 +1,17 @@
 <template>
-    <div>
-        <Header></Header>
-        <GridDefault>
-            <div class="post-previews">
-                <PostPreview v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node" />
-            </div>        
-        </GridDefault>
-    </div>
+  <div>
+    <Header></Header>
+    <GridDefault>
+      <div class="post-previews">
+        <PostPreview v-for="edge in $page.allBlogPost.edges" :key="edge.node.id" :post="edge.node" />
+      </div>
+    </GridDefault>
+  </div>
 </template>
 
 <style lang="scss">
 .post-previews {
-    grid-area: content;
+  grid-area: content;
 }
 </style>
 
@@ -29,7 +29,7 @@ export default {
 
 <page-query>
 query {
-    allPost {
+    allBlogPost {
         totalCount
         edges {
             node {

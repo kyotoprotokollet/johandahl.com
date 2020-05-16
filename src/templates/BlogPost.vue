@@ -27,16 +27,16 @@ export default {
 </script>
 
 <page-query>
-	query Post ($path: String!) {
-		post: post (path: $path) {
-			id
-			author
-			title
-			content
-			date (format: "D MMMM YYYY")
-			timeToRead
-		}
-	}
+  query Post ($path: String!) {
+    post: blogPost (path: $path) {
+      id
+      author
+      title
+      content
+      date (format: "D MMMM YYYY")
+      timeToRead
+    }
+  }
 </page-query>
 
 <style lang="scss">
@@ -44,22 +44,21 @@ export default {
   grid-area: content;
 
   > * + * {
-	  margin-top: 2rem;
+    margin-top: 2rem;
   }
 }
 
 .post-content {
-	* + {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 4rem;
+  * + {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 4rem;
+    }
   }
-	}
-
 }
 
 .go-back {
