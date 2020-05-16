@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--<Header></Header>-->
     <div class="front-page-splash content-padding">
       <div class="intro">
         <h1 class="intro__heading">Johan Dahl</h1>

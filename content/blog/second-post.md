@@ -23,7 +23,9 @@ foo
 ```
 
 ### DRY up your code
+
 Given enough time, I can meet any software deadline. Everything in Ruby is an object. Most iconic duo: Kernighan and Ritchie. Check out my Github. Check out my Github. Try-catch the entire program.CS is theory, not learning how to program. This is a bad idea. UNIX is the answer, but only if you phrase the question very carefully. The trinity: HTML, CSS, and Javascript. Two programmers walk into a foo.
 
 ### Before we start
+
 C is dead. Byte, short, int, long, float, double. Fast paced agile development team. // Nobody is proud of this. Albeit an archaic language, C is still relevant for systems programming.I'm moving to the bay area. // I'll fix this later. Java, Ruby, C, Javascript, GO, Rust, Cobol, Fortran // You can't fix this, but if you try please update the following - //Hours wasted here: 43. // I'll fix this later.

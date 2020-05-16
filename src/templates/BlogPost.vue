@@ -9,7 +9,7 @@
           :timeToRead="$page.post.timeToRead"
           :author="$page.post.author"
         />
-        <h1 class="post-title">{{$page.post.title}}</h1>
+        <h1 class="post-title">{{ $page.post.title }}</h1>
         <div class="post-content" v-html="$page.post.content"></div>
       </div>
     </GridDefault>
