@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="profile-image">
-        <g-image src="~/assets/images/johandahl.jpg" width="500" />
+        <g-image src="~/assets/images/johandahl.jpg" width="500" alt="A picture of me, Johan Dahl" />
       </div>
     </div>
   </div>
