@@ -8,7 +8,7 @@
                     class="intro__preamble"
                 >Hello. I'm a designer and front-end web developer residing in Malmö, Sweden. I enjoy designing and building web sites, snapping pictures, drinking beer and pretending like I know philosophy.</p>
                 <div class="contact">
-                    <h3 class="contact__heading">Get in touch</h3>
+                    <h3 class="mt-8 mb-4">Get in touch</h3>
                     <ul class="contact__methods">
                         <li>
                             <strong>Email:</strong> johan.devotee@gmail.com
