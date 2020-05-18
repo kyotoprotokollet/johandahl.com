@@ -1,0 +1,48 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended", "plugin:vue/recommended"],
+    "globals": {
+        "Vue": true,
+        "_": true
+    },
+    "plugins": [],
+    "rules": {
+        "semi": ["error", "never"],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "vue/html-indent": ["error", 4],
+        "vue/html-self-closing": [
+            "error",
+            {
+                "html": {
+                    "void": "never",
+                    "normal": "never",
+                    "component": "never"
+                },
+                "svg": "always",
+                "math": "always"
+            }
+        ],
+        "vue/max-attributes-per-line": ["error", {
+            "singleline": 3,
+            "multiline": {
+                "max": 1,
+                "allowFirstLine": false
+            }
+        }],
+        "vue/component-name-in-template-casing": ["error", "kebab-case", {
+            "registeredComponentsOnly": false,
+            "ignores": []
+        }]
+    }
+}
