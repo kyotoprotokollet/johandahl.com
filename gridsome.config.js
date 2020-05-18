@@ -3,6 +3,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const tailwindcss = require("tailwindcss")
 
 module.exports = {
   siteName: 'Code & Design - Johan Dahl',
@@ -18,6 +19,15 @@ module.exports = {
       }
     },
   ],
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          tailwindcss
+        ],
+      },
+    },
+  },
   templates: {
     BlogPost: '/blog/:year/:month/:day/:slug'
   },

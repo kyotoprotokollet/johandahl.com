@@ -1,30 +1,34 @@
 <template>
-  <div>
-    <Header></Header>
-    <GridDefault>
-      <div class="post-previews">
-        <PostPreview v-for="edge in $page.allBlogPost.edges" :key="edge.node.id" :post="edge.node" />
-      </div>
-    </GridDefault>
-  </div>
+    <div>
+        <Header></Header>
+        <GridDefault>
+            <div class="post-previews">
+                <PostPreview
+                    v-for="edge in $page.allBlogPost.edges"
+                    :key="edge.node.id"
+                    :post="edge.node"
+                />
+            </div>
+        </GridDefault>
+    </div>
 </template>
 
 <style lang="scss">
 .post-previews {
-  grid-area: content;
+    grid-area: content;
 }
 </style>
 
 <script>
-import PostPreview from "@/components/PostPreview";
+import PostPreview from '@/components/PostPreview'
 export default {
-  components: {
-    PostPreview
-  },
-  metaInfo: {
-    title: "Blog"
-  }
-};
+    components: {
+        PostPreview,
+    },
+    metaInfo: {
+        title: 'Blog',
+    },
+}
 </script>
 
 <page-query>
