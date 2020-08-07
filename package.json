@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.3.0",
-    "gridsome": "^0.7.14",
-    "tailwindcss": "^1.4.6"
+    "gridsome": "^0.7.19",
+    "tailwindcss": "^1.6.2"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
