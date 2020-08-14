@@ -21,12 +21,6 @@ body {
     min-height: 100vh;
 }
 
-#app {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 a {
     color: var(--color-link);
     font-weight: 600;
