@@ -50,11 +50,14 @@ export default {
 <style lang="scss">
 .front-page-splash {
     max-width: 1000px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 45px;
     margin: auto;
+
+    @include breakpoint(medium) {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 .intro {
