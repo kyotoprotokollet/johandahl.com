@@ -29,6 +29,9 @@ module.exports = {
     siteDescription: "Writing and learning about code and design",
     plugins: [
         {
+        use: 'gridsome-plugin-robots-txt'
+        },
+        {
             use: '@gridsome/plugin-sitemap'
         },
         {
