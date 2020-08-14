@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="front-page-wrapper">
         <div class="front-page-splash content-padding">
             <div class="intro">
                 <h1 class="intro__heading">Johan Dahl</h1>
@@ -48,6 +48,17 @@ export default {
 </script>
 
 <style lang="scss">
+.front-page-wrapper {
+    height: 100vh;
+    padding-top: 30px;
+
+    @include breakpoint(medium) {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .front-page-splash {
     max-width: 1000px;
     display: grid;
@@ -62,6 +73,11 @@ export default {
 
 .intro {
     margin-bottom: 2rem;
+    grid-row-start: 2;
+
+    @include breakpoint(medium) {
+        grid-row-start: 1;
+    }
 }
 
 .intro__heading {
@@ -80,7 +96,12 @@ export default {
 
 .profile-image {
     img {
+        max-width: 33%;
         border-radius: 50%;
+
+        @include breakpoint(medium) {
+            max-width: 100%;
+        }
     }
 }
 
