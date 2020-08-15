@@ -1,8 +1,7 @@
 // This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
-
 // Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+
 const path = require('path')
 
 function addStyleResource (rule) {
@@ -16,7 +15,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-    chainWebpack (config) {
+    chainWebpack(config) {
         // Load variables for all vue-files
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 
@@ -25,32 +24,39 @@ module.exports = {
         })
     },
     siteName: 'Code & Design - Johan Dahl',
-    siteUrl: "https://johandahl.com",
-    siteDescription: "Writing and learning about code and design",
+    siteUrl: 'https://johandahl.com',
+    siteDescription: 'Writing and learning about code and design',
+    icon: './src/favicon.svg',
     plugins: [
         {
-        use: 'gridsome-plugin-robots-txt'
-        },
-        {
-            use: '@gridsome/plugin-sitemap'
-        },
-        {
-            use: "@gridsome/source-filesystem",
+            use: 'gridsome-plugin-gtm',
             options: {
-                typeName: "BlogPost",
+                id: 'GTM-5Q52RQX',
+                enabled: true,
+                debug: true,
+            },
+        },
+        {
+            use: 'gridsome-plugin-robots-txt',
+        },
+        {
+            use: '@gridsome/plugin-sitemap',
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                typeName: 'BlogPost',
                 baseDir: './content/blog',
-                path: "*.md",
-            }
+                path: '*.md',
+            },
         },
     ],
     templates: {
-        BlogPost: '/blog/:year/:month/:day/:slug'
+        BlogPost: '/blog/:year/:month/:day/:slug',
     },
     transformers: {
         remark: {
-            plugins: [
-                '@gridsome/remark-prismjs'
-            ]
-        }
-    }
+            plugins: ['@gridsome/remark-prismjs'],
+        },
+    },
 }
