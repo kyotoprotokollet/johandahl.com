@@ -52,7 +52,7 @@ module.exports = {
         },
     ],
     templates: {
-        BlogPost: '/blog/:year/:month/:day/:slug',
+        BlogPost: '/blog/:slug',
     },
     transformers: {
         remark: {

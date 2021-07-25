@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header></Header>
+        <Header />
         <GridDefault>
             <div class="post-previews">
                 <PostPreview
@@ -33,7 +33,7 @@ export default {
 
 <page-query>
 query {
-    allBlogPost {
+    allBlogPost(filter: { published: { eq: true }}) {
         totalCount
         edges {
             node {
@@ -44,6 +44,7 @@ query {
                 description
                 date (format: "D MMMM YYYY")
                 path
+                content
             }
         }
     }

@@ -27,3 +27,9 @@ h3 {
 p {
     margin-bottom: 1.5em;
 }
+
+.post-content {
+    ul li + li {
+        margin-top: 1em;
+    }
+}
